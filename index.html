@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veebu Landing</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    video#bg-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.3);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      flex-wrap: wrap;
+    }
+
+    .left-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .navbar a {
+      color: black;
+      font-family: 'Pacifico', cursive;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      background-color: white;
+    }
+
+    .dropdown {
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(255, 255, 255, 0.95);
+      width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-align: left;
+    }
+
+    .right-section img {
+      height: 40px;
+    }
+
+    .main-content {
+      text-align: center;
+      margin-top: 160px;
+      padding: 20px;
+      color: white;
+    }
+
+    .main-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .input-button-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .main-content input {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid white;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+    }
+
+    .main-content input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .create-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 2px solid black;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 25px;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .create-button:hover {
+      background-color: white;
+    }
+
+    .img {
+      width: 20px;
+      height: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .left-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main-content h1 {
+        font-size: 24px;
+      }
+
+      .main-content input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Background Video -->
+<video id="bg-video" autoplay muted loop playsinline>
+  <source src="LOOP.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <div class="left-section">
+    <img src="veebu m.png" alt="Veebu logo" width="40" height="50">
+    <div class="logo">eebu</div>
+    <div class="dropdown">
+      <a href="#">Features</a>
+      <div class="dropdown-content">
+        <a href="#">Text to Image</a>
+        <a href="#">Text to Video</a>
+        <a href="#">Image to Video</a>
+        <a href="#">Image to Animation</a>
+      </div>
+    </div>
+    <a href="#">Templates</a>
+  </div>
+  <div class="right-section">
+    <img src="coin.png" alt="Coin Icon">
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content">
+  <h1>What you imagine is what Veebu</h1>
+  <div class="input-button-wrapper">
+    <input type="text" placeholder="An animated supernatural man with blue tone">
+    <a href="gmail1.html" class="create-button">
+     Create
+  </a>
+  </div>
+  <br>
+  <span>A high stylis...</span><br><br>
+
+  <a href="gmail1.html" class="create-button">
+    <img src="g logo.png" alt="g logo" class="img"> Sign up with Google
+  </a>
+</div>
+
+</body>
+</html>
