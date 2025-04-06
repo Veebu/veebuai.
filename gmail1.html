@@ -114,18 +114,17 @@
       justify-content: flex-end;
     }
 
-    .button-row button {
+    .button-row a.button {
       background-color: #1a73e8;
       color: white;
       padding: 10px 25px;
       font-size: 14px;
-      border: none;
       border-radius: 20px;
-      cursor: pointer;
+      text-decoration: none;
       transition: background 0.3s;
     }
 
-    .button-row button:hover {
+    .button-row a.button:hover {
       background-color: #1558b0;
     }
 
@@ -155,37 +154,15 @@
         <p>to continue to <a href="#">Veebu</a></p>
       </div>
       <div class="right-side">
-        <input type="email" name="email" placeholder="Email or phone">
-        <input type="password" name="password" placeholder="Enter your password">
+        <input type="email" name="email" placeholder="Email or phone" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
         <a href="#">Forgot email?</a>
         <p>Before using this app, you can review Veebu’s <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</p>
         <div class="button-row">
-          <button> <a href="https://app.klingai.com/global/image-to-video/frame-mode/new" class="button"></a>Next</button>
+          <a href="https://app.klingai.com/global/image-to-video/frame-mode/new" class="button">Next</a>
         </div>
       </div>
     </div>
   </div>
-  <html>
-        <head>
-          <title>Login</title>
-          <style>
-            body {
-              font-family: Arial, sans-serif;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh;
-              background-color: #f1f3f4;
-            }
-            .message {
-              background: white;
-              padding: 30px;
-              border-radius: 10px;
-              text-align: center;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            }
-          </style>
-        </head>
-        </html>
 </body>
 </html>
